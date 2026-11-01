@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phạm Thành Lâm - IT Support & System Administrator</title>
+  <meta name="description" content="Portfolio và Hồ sơ năng lực của Phạm Thành Lâm - Chuyên viên Kỹ thuật IT / Quản trị Hệ thống & Website. An Lão, Hải Phòng.">
+  <link rel="icon" type="image/jpeg" href="assets/avatar.jpg">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            primary: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              600: '#0284c7',
+              700: '#0369a1',
+              900: '#0c4a6e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Clean, paper-like smooth aesthetic */
+    body {
+      background-color: #f8fafc;
+      color: #1e293b;
+    }
+    .clean-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+      transition: all 0.2s ease;
+    }
+    .clean-card:hover {
+      border-color: #cbd5e1;
+      box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.07);
+    }
+    @keyframes toastFade {
+      from { transform: translateY(12px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .toast-anim {
+      animation: toastFade 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased selection:bg-slate-900 selection:text-white">
+
+  <!-- TOP HEADER / NAVIGATION -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      
+      <!-- Brand / Identity -->
+      <a href="#hero" class="flex items-center gap-3 group">
+        <img src="assets/avatar.jpg" alt="Phạm Thành Lâm" class="w-9 h-9 rounded-full object-cover border border-slate-200 group-hover:border-slate-400 transition">
+        <div>
+          <div class="font-bold text-slate-900 text-sm tracking-tight leading-snug">Phạm Thành Lâm</div>
+          <div class="text-[12px] text-slate-500 font-medium">Chuyên viên Kỹ thuật IT</div>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600">
+        <a href="#about" class="hover:text-slate-900 transition">Giới thiệu</a>
+        <a href="#skills" class="hover:text-slate-900 transition">Kỹ năng</a>
+        <a href="#experience" class="hover:text-slate-900 transition">Kinh nghiệm</a>
+        <a href="#education" class="hover:text-slate-900 transition">Học vấn</a>
+        <a href="#contact" class="hover:text-slate-900 transition">Liên hệ</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="flex items-center gap-2">
+        <a href="assets/CV_Xin_Viec.pdf" download="CV_Xin_Viec.pdf" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold shadow-sm transition">
+          <i data-lucide="download" class="w-3.5 h-3.5"></i>
+          <span>Tải CV PDF</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 py-10 space-y-14">
+
+    <!-- HERO PROFILE SECTION -->
+    <section id="hero" class="clean-card rounded-2xl p-6 sm:p-10">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-8">
+        
+        <!-- Profile Avatar -->
+        <div class="relative shrink-0">
+          <img src="assets/avatar.jpg" alt="Phạm Thành Lâm" class="w-28 h-28 sm:w-36 sm:h-36 rounded-2xl object-cover shadow-sm border border-slate-200">
+          <span class="absolute -bottom-1.5 -right-1.5 flex h-4 w-4">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-4 w-4 bg-emerald-500 border-2 border-white"></span>
+          </span>
+        </div>
+
+        <!-- Identity & Status -->
+        <div class="flex-1 space-y-3">
+          <div class="flex flex-wrap items-center gap-2.5">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-700 text-xs font-medium border border-emerald-200/60">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+              Sẵn sàng nhận việc ngay
+            </span>
+            <span class="text-xs font-medium text-slate-500 flex items-center gap-1">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400"></i>
+              An Lão, Hải Phòng
+            </span>
+          </div>
+
+          <div>
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              Phạm Thành Lâm
+            </h1>
+            <p class="text-base sm:text-lg text-slate-700 font-medium mt-0.5">
+              Chuyên viên Kỹ thuật IT <span class="text-slate-300">|</span> Quản trị Hệ thống & Website
+            </p>
+          </div>
+
+          <p class="text-sm text-slate-600 leading-relaxed max-w-2xl">
+            Tốt nghiệp Đại học chuyên ngành CNTT. Có năng lực thực tế trong việc kiểm tra, sửa chữa phần cứng máy tính/laptop, xử lý sự cố mạng văn phòng, kết hợp cùng kỹ năng quản trị máy chủ VPS và xây dựng website ứng dụng các công cụ công nghệ mới.
+          </p>
+
+          <!-- Quick Action Buttons -->
+          <div class="flex flex-wrap items-center gap-2.5 pt-1">
+            <a href="tel:0964491263" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold transition">
+              <i data-lucide="phone" class="w-3.5 h-3.5 text-slate-600"></i>
+              <span>0964 491 263</span>
+            </a>
+            <a href="mailto:lampham8585@gmail.com" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold transition">
+              <i data-lucide="mail" class="w-3.5 h-3.5 text-slate-600"></i>
+              <span>lampham8585@gmail.com</span>
+            </a>
+            <a href="https://github.com/ThanhLam-Dev" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold transition font-mono">
+              <i data-lucide="github" class="w-3.5 h-3.5 text-slate-600"></i>
+              <span>github.com/ThanhLam-Dev</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Quick Metrics Bar -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mt-8 pt-6 border-t border-slate-100 text-center sm:text-left">
+        <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-xs text-slate-500 font-medium">Trình độ chuyên môn</div>
+          <div class="text-sm font-bold text-slate-900 mt-0.5">Cử nhân CNTT (2026)</div>
+        </div>
+        <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-xs text-slate-500 font-medium">Hạ tầng & Sửa chữa</div>
+          <div class="text-sm font-bold text-slate-900 mt-0.5">6 Tháng Helpdesk PC</div>
+        </div>
+        <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-xs text-slate-500 font-medium">Web & Quản trị Server</div>
+          <div class="text-sm font-bold text-slate-900 mt-0.5">1+ Năm Freelance</div>
+        </div>
+        <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="text-xs text-slate-500 font-medium">Ứng dụng hiệu quả</div>
+          <div class="text-sm font-bold text-slate-900 mt-0.5">Công cụ AI thế hệ mới</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: MỤC TIÊU NGHỀ NGHIỆP -->
+    <section id="about" class="space-y-4">
+      <div class="flex items-center gap-2">
+        <div class="w-2 h-2 rounded-full bg-slate-900"></div>
+        <h2 class="text-lg font-bold text-slate-900 tracking-tight uppercase text-xs tracking-wider">Mục Tiêu Nghề Nghiệp</h2>
+      </div>
+
+      <div class="clean-card rounded-2xl p-6 sm:p-7">
+        <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+          Kỹ thuật viên CNTT tốt nghiệp Đại học chuyên ngành Công nghệ Thông tin với nền tảng đa dạng từ phần cứng, mạng nội bộ đến phát triển và quản trị hệ thống Website/Server. Có kinh nghiệm thực chiến trong việc bảo trì thiết bị văn phòng và triển khai các giải pháp phần mềm cho khách hàng.
+        </p>
+        <p class="text-sm sm:text-base text-slate-700 leading-relaxed mt-3">
+          Mong muốn đem sự nhạy bén công nghệ, khả năng ứng dụng các công cụ AI hiện đại và tinh thần trách nhiệm cao để đảm bảo hệ thống CNTT của công ty luôn <strong>vận hành thông suốt, an toàn và hiệu quả</strong>.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6 pt-6 border-t border-slate-100">
+          <div class="flex items-start gap-3">
+            <div class="w-8 h-8 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center shrink-0 mt-0.5">
+              <i data-lucide="check" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <div class="text-sm font-semibold text-slate-900">Ổn định hạ tầng</div>
+              <div class="text-xs text-slate-500 mt-0.5">Đảm bảo máy tính, mạng văn phòng, máy chủ hoạt động liên tục.</div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5">
+              <i data-lucide="cpu" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <div class="text-sm font-semibold text-slate-900">Tối ưu hiệu suất</div>
+              <div class="text-xs text-slate-500 mt-0.5">Ứng dụng AI và quy trình tự động để giải quyết sự cố nhanh gọn.</div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-700 flex items-center justify-center shrink-0 mt-0.5">
+              <i data-lucide="users" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <div class="text-sm font-semibold text-slate-900">Tận tâm hỗ trợ</div>
+              <div class="text-xs text-slate-500 mt-0.5">Nhiệt tình hướng dẫn và hỗ trợ kỹ thuật cho các phòng ban nội bộ.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: KỸ NĂNG CHUYÊN MÔN -->
+    <section id="skills" class="space-y-4">
+      <div class="flex items-center gap-2">
+        <div class="w-2 h-2 rounded-full bg-slate-900"></div>
+        <h2 class="text-lg font-bold text-slate-900 tracking-tight uppercase text-xs tracking-wider">Kỹ Năng Chuyên Môn</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+        <!-- Nhóm 1: Quản trị Máy chủ & Hạ tầng -->
+        <div class="clean-card rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 pb-3 border-b border-slate-100">
+              <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center">
+                <i data-lucide="server" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <h3 class="text-sm font-bold text-slate-900">Quản trị Máy chủ & Hạ tầng</h3>
+                <p class="text-xs text-slate-500 font-mono">Server & Deployment</p>
+              </div>
+            </div>
+
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600 mt-4 leading-relaxed">
+              <li class="flex items-start gap-2.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 shrink-0"></span>
+                <span>Triển khai, cấu hình và quản trị máy chủ ảo (VPS), quản lý và trỏ tên miền (Domain/DNS).</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 shrink-0"></span>
+                <span>Cài đặt và thiết lập chứng chỉ bảo mật SSL (HTTPS).</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 shrink-0"></span>
+                <span>Quản lý mã nguồn dự án và quy trình triển khai thông qua Git / GitHub.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex flex-wrap gap-1.5 mt-5 pt-3 border-t border-slate-100">
+            <span class="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-slate-700">VPS</span>
+            <span class="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-slate-700">Domain / DNS</span>
+            <span class="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-slate-700">SSL Security</span>
+            <span class="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-slate-700 font-mono">Git / GitHub</span>
+          </div>
+        </div>
+
+        <!-- Nhóm 2: Phát triển & Quản trị Website -->
+        <div class="clean-card rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 pb-3 border-b border-slate-100">
+              <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center">
+                <i data-lucide="code" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <h3 class="text-sm font-bold text-slate-900">Phát triển & Quản trị Website</h3>
+                <p class="text-xs text-slate-500 font-mono">Backend, Frontend & AI Dev</p>
+              </div>
+            </div>
+
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600 mt-4 leading-relaxed">
+              <li class="flex items-start gap-2.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 shrink-0"></span>
+                <span><strong>Backend:</strong> Xây dựng & bảo trì RESTful API với Node.js; áp dụng tư duy Lập trình hướng đối tượng (OOP); triển khai cơ chế xác thực JWT, mã hóa mật khẩu Hash.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 shrink-0"></span>
+                <span><strong>Frontend:</strong> Xây dựng giao diện và chỉnh sửa tính năng web với HTML, CSS, JavaScript và React.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 shrink-0"></span>
+                <span><strong>Ứng dụng AI:</strong> Thành thạo sử dụng các công cụ AI chuyên sâu (Claude Code, Antigravity) giúp tăng tốc độ phát triển tính năng, đọc hiểu mã nguồn, rà soát lỗi (debug) nhanh chóng.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex flex-wrap gap-1.5 mt-5 pt-3 border-t border-slate-100">
+            <span class="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-slate-700">Node.js</span>
+            <span class="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-slate-700">RESTful API</span>
+            <span class="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-slate-700">React</span>
+            <span class="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-slate-700">JWT Auth</span>
+            <span class="px-2 py-0.5 rounded text-[11px] font-medium bg-blue-50 text-blue-700 font-medium">Claude Code</span>
+            <span class="px-2 py-0.5 rounded text-[11px] font-medium bg-blue-50 text-blue-700 font-medium">Antigravity</span>
+          </div>
+        </div>
+
+        <!-- Nhóm 3: Phần cứng, Phần mềm & Mạng (IT Helpdesk) -->
+        <div class="clean-card rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 pb-3 border-b border-slate-100">
+              <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center">
+                <i data-lucide="wrench" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <h3 class="text-sm font-bold text-slate-900">Phần cứng, Phần mềm & Mạng</h3>
+                <p class="text-xs text-slate-500 font-mono">IT Helpdesk Support</p>
+              </div>
+            </div>
+
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600 mt-4 leading-relaxed">
+              <li class="flex items-start gap-2.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 shrink-0"></span>
+                <span>Chẩn đoán lỗi, lắp ráp, thay thế và nâng cấp linh kiện máy tính / laptop (Mainboard, RAM, SSD, màn hình).</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 shrink-0"></span>
+                <span>Cài đặt hệ điều hành (Windows), cấu hình các phần mềm chuyên dụng và xử lý sự cố máy tính cho nhân sự nội bộ.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 shrink-0"></span>
+                <span>Thiết lập và xử lý các sự cố cơ bản về mạng nội bộ văn phòng (LAN / Wi-Fi).</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex flex-wrap gap-1.5 mt-5 pt-3 border-t border-slate-100">
+            <span class="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-slate-700">Phần cứng PC & Laptop</span>
+            <span class="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-slate-700">Windows OS</span>
+            <span class="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-slate-700">Mạng LAN & Wi-Fi</span>
+            <span class="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-slate-700">Troubleshooting</span>
+          </div>
+        </div>
+
+        <!-- Nhóm 4: Kỹ năng Bổ trợ & Văn phòng -->
+        <div class="clean-card rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 pb-3 border-b border-slate-100">
+              <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center">
+                <i data-lucide="file-text" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <h3 class="text-sm font-bold text-slate-900">Kỹ năng Bổ trợ & Văn phòng</h3>
+                <p class="text-xs text-slate-500 font-mono">Office & Communication</p>
+              </div>
+            </div>
+
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600 mt-4 leading-relaxed">
+              <li class="flex items-start gap-2.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 shrink-0"></span>
+                <span>Sử dụng thành thạo tin học văn phòng (Word, Excel, PowerPoint) phục vụ công tác báo cáo, quản lý hành chính.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 shrink-0"></span>
+                <span>Có kiến thức và kinh nghiệm thiết lập, vận hành quảng cáo Facebook (Facebook Ads) hỗ trợ truyền thông sản phẩm / website.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 shrink-0"></span>
+                <span>Ngoại ngữ: Tiếng Anh giao tiếp cơ bản và đọc hiểu tốt tài liệu kỹ thuật chuyên ngành.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex flex-wrap gap-1.5 mt-5 pt-3 border-t border-slate-100">
+            <span class="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-slate-700">Word, Excel, PPT</span>
+            <span class="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-slate-700">Facebook Ads</span>
+            <span class="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-slate-700">Tiếng Anh Kỹ thuật</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: KINH NGHIỆM LÀM VIỆC -->
+    <section id="experience" class="space-y-4">
+      <div class="flex items-center gap-2">
+        <div class="w-2 h-2 rounded-full bg-slate-900"></div>
+        <h2 class="text-lg font-bold text-slate-900 tracking-tight uppercase text-xs tracking-wider">Kinh Nghiệm Làm Việc</h2>
+      </div>
+
+      <div class="space-y-4">
+
+        <!-- Job 1 -->
+        <div class="clean-card rounded-2xl p-6 sm:p-7">
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 pb-3 border-b border-slate-100">
+            <div>
+              <h3 class="text-base sm:text-lg font-bold text-slate-900">Kỹ thuật viên Phát triển Web & Quản trị Hệ thống</h3>
+              <p class="text-xs sm:text-sm font-medium text-slate-500">Hình thức: Freelance / Làm việc từ xa</p>
+            </div>
+            <div class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 bg-slate-100 px-3 py-1 rounded-full w-fit">
+              <i data-lucide="calendar" class="w-3.5 h-3.5 text-slate-500"></i>
+              <span>2025 – Hiện tại (Hơn 1 năm)</span>
+            </div>
+          </div>
+
+          <div class="mt-4 space-y-2.5 text-xs sm:text-sm text-slate-600 leading-relaxed">
+            <div class="flex items-start gap-2.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 shrink-0"></span>
+              <span>Tiếp nhận yêu cầu từ khách hàng, trực tiếp xây dựng, tùy chỉnh và triển khai hoàn chỉnh các hệ thống Website lên môi trường máy chủ VPS.</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 shrink-0"></span>
+              <span>Thiết lập cấu hình tên miền, tối ưu hóa cơ sở dữ liệu và đảm bảo tính bảo mật cho hệ thống (JWT, phân quyền, bảo mật thông tin người dùng).</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 shrink-0"></span>
+              <span>Kết hợp kiến thức nền tảng về kiến trúc phần mềm với các công cụ AI thế hệ mới (Claude Code, Antigravity) để <strong>rút ngắn 50% thời gian viết code</strong>, tập trung vào việc kiểm thử và đảm bảo chất lượng vận hành ổn định của sản phẩm.</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 shrink-0"></span>
+              <span>Hỗ trợ kỹ thuật từ xa, xử lý các sự cố phát sinh về server và giao diện web cho khách hàng trong quá trình vận hành.</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 shrink-0"></span>
+              <span>Triển khai các chiến dịch chạy quảng cáo Facebook cho một số dự án, hỗ trợ tăng lượng truy cập và tiếp cận khách hàng.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="clean-card rounded-2xl p-6 sm:p-7">
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 pb-3 border-b border-slate-100">
+            <div>
+              <h3 class="text-base sm:text-lg font-bold text-slate-900">Kỹ thuật viên Máy tính (Thực tập & Làm việc chính thức)</h3>
+              <p class="text-xs sm:text-sm font-semibold text-slate-700 mt-0.5">Máy Tính Đông Phong <span class="text-slate-400 font-normal">(Kiến An, Hải Phòng)</span></p>
+            </div>
+            <div class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 bg-slate-100 px-3 py-1 rounded-full w-fit">
+              <i data-lucide="clock" class="w-3.5 h-3.5 text-slate-500"></i>
+              <span>Thời gian: 6 tháng</span>
+            </div>
+          </div>
+
+          <div class="mt-4 space-y-2.5 text-xs sm:text-sm text-slate-600 leading-relaxed">
+            <div class="flex items-start gap-2.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 shrink-0"></span>
+              <span>Tiếp nhận máy, kiểm tra, chẩn đoán chính xác các lỗi phần cứng (Mainboard, RAM, Ổ cứng, Màn hình...) và tư vấn phương án thay thế, nâng cấp linh kiện cho khách hàng.</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 shrink-0"></span>
+              <span>Trực tiếp tháo lắp, vệ sinh bảo dưỡng định kỳ máy tính bàn (PC) và Laptop.</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 shrink-0"></span>
+              <span>Cài đặt hệ điều hành Windows, bộ công cụ Office, các phần mềm đồ họa/văn phòng và khắc phục các lỗi xung đột phần mềm, nhiễm virus, lỗi kết nối mạng.</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 shrink-0"></span>
+              <span>Giao tiếp, hướng dẫn khách hàng sử dụng thiết bị ổn định sau sửa chữa.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: HỌC VẤN & ĐIỂM MẠNH -->
+    <div id="education" class="grid grid-cols-1 md:grid-cols-12 gap-5">
+      
+      <!-- Học vấn (5 cols) -->
+      <div class="md:col-span-5 space-y-4">
+        <div class="flex items-center gap-2">
+          <div class="w-2 h-2 rounded-full bg-slate-900"></div>
+          <h2 class="text-lg font-bold text-slate-900 tracking-tight uppercase text-xs tracking-wider">Học Vấn</h2>
+        </div>
+
+        <div class="clean-card rounded-2xl p-6">
+          <span class="text-xs font-semibold px-2.5 py-1 rounded bg-slate-100 text-slate-700">Tốt nghiệp: 2026</span>
+          <h3 class="text-base font-bold text-slate-900 mt-3">Cử nhân Công nghệ Thông tin</h3>
+          <p class="text-xs sm:text-sm text-slate-600 font-medium mt-1">Trường Đại học Quản lý và Công nghệ Hải Phòng</p>
+          
+          <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs text-slate-500">Xếp loại tốt nghiệp:</span>
+            <span class="text-xs font-bold text-slate-900 px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-700 border border-emerald-200/60">Bằng Khá</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Điểm mạnh (7 cols) -->
+      <div class="md:col-span-7 space-y-4">
+        <div class="flex items-center gap-2">
+          <div class="w-2 h-2 rounded-full bg-slate-900"></div>
+          <h2 class="text-lg font-bold text-slate-900 tracking-tight uppercase text-xs tracking-wider">Điểm Mạnh Bản Thân</h2>
+        </div>
+
+        <div class="clean-card rounded-2xl p-6 space-y-4">
+          <div class="flex items-start gap-3">
+            <div class="w-6 h-6 rounded-full bg-slate-100 text-slate-700 flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">1</div>
+            <div>
+              <div class="text-sm font-bold text-slate-900">Thái độ làm việc</div>
+              <p class="text-xs sm:text-sm text-slate-600 mt-0.5">Chăm chỉ, chủ động trong công việc, sẵn sàng hỗ trợ các phòng ban khác khi có sự cố kỹ thuật.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 pt-3 border-t border-slate-100">
+            <div class="w-6 h-6 rounded-full bg-slate-100 text-slate-700 flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">2</div>
+            <div>
+              <div class="text-sm font-bold text-slate-900">Tính cách</div>
+              <p class="text-xs sm:text-sm text-slate-600 mt-0.5">Vui vẻ, hòa đồng, khả năng giao tiếp và phối hợp làm việc nhóm tốt trong môi trường doanh nghiệp.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 pt-3 border-t border-slate-100">
+            <div class="w-6 h-6 rounded-full bg-slate-100 text-slate-700 flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">3</div>
+            <div>
+              <div class="text-sm font-bold text-slate-900">Tư duy giải quyết vấn đề</div>
+              <p class="text-xs sm:text-sm text-slate-600 mt-0.5">Nhạy bén trong việc tìm kiếm giải pháp và áp dụng công nghệ mới để xử lý công việc nhanh gọn.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SECTION: LIÊN HỆ VÀ TẢI CV -->
+    <section id="contact" class="space-y-4">
+      <div class="clean-card rounded-2xl p-6 sm:p-9 bg-white border border-slate-200">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+          
+          <div class="space-y-1.5 max-w-xl">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">
+              Thông Tin Liên Hệ & Phỏng Vấn
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-600">
+              Quý nhà tuyển dụng có thể liên hệ trực tiếp qua số điện thoại hoặc email bên dưới.
+            </p>
+          </div>
+
+          <div class="flex items-center gap-3 shrink-0">
+            <a href="assets/CV_Xin_Viec.pdf" download="CV_Xin_Viec.pdf" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white text-xs sm:text-sm font-semibold shadow-sm transition">
+              <i data-lucide="download" class="w-4 h-4"></i>
+              <span>Tải CV Bản Gốc</span>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 mt-6 pt-6 border-t border-slate-100">
+          
+          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-lg bg-white border border-slate-200 flex items-center justify-center text-slate-700">
+                <i data-lucide="phone" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <div class="text-[11px] text-slate-400 font-medium">Điện thoại / Zalo</div>
+                <a href="tel:0964491263" class="text-xs font-bold text-slate-900 hover:underline">0964 491 263</a>
+              </div>
+            </div>
+            <button onclick="copyInfo('0964491263', 'Số điện thoại')" class="text-slate-400 hover:text-slate-700 p-1" title="Sao chép">
+              <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
+            <div class="flex items-center gap-3 truncate">
+              <div class="w-8 h-8 rounded-lg bg-white border border-slate-200 flex items-center justify-center text-slate-700 shrink-0">
+                <i data-lucide="mail" class="w-4 h-4"></i>
+              </div>
+              <div class="truncate">
+                <div class="text-[11px] text-slate-400 font-medium">Hòm thư Email</div>
+                <a href="mailto:lampham8585@gmail.com" class="text-xs font-bold text-slate-900 hover:underline truncate block">lampham8585@gmail.com</a>
+              </div>
+            </div>
+            <button onclick="copyInfo('lampham8585@gmail.com', 'Email')" class="text-slate-400 hover:text-slate-700 p-1 shrink-0 ml-1" title="Sao chép">
+              <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-lg bg-white border border-slate-200 flex items-center justify-center text-slate-700">
+                <i data-lucide="map-pin" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <div class="text-[11px] text-slate-400 font-medium">Địa bàn làm việc</div>
+                <span class="text-xs font-bold text-slate-900">An Lão, Hải Phòng</span>
+              </div>
+            </div>
+            <span class="text-xs text-slate-400 font-mono">VN</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-200 bg-white py-6 px-4 text-center text-xs text-slate-500">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <p>© 2026 Phạm Thành Lâm • Chuyên viên Kỹ thuật IT / Quản trị Hệ thống & Website</p>
+      <a href="https://github.com/ThanhLam-Dev" target="_blank" rel="noopener noreferrer" class="hover:text-slate-900 transition font-mono">
+        github.com/ThanhLam-Dev
+      </a>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 hidden bg-slate-900 text-white px-4 py-2.5 rounded-lg shadow-lg flex items-center gap-2.5 text-xs font-medium toast-anim">
+    <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+    <span id="toast-text">Đã sao chép!</span>
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    function copyInfo(text, label) {
+      navigator.clipboard.writeText(text).then(function() {
+        const toast = document.getElementById('toast');
+        const toastText = document.getElementById('toast-text');
+        toastText.textContent = 'Đã sao chép ' + label + ': ' + text;
+        toast.classList.remove('hidden');
+        lucide.createIcons();
+        setTimeout(function() {
+          toast.classList.add('hidden');
+        }, 2500);
+      });
+    }
+  </script>
+</body>
+</html>
